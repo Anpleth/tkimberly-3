@@ -3,51 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para Kimberly</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/346/346167.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Responsive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            padding: 1rem;
+        }
+        .header {
+            font-size: 2rem;
+            text-align: center;
+            margin: 1rem 0;
+        }
+        .content {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            color: white;
+        }
+        .menu-item {
+            padding: 15px;
+        }
+        /* Estilos para pantallas grandes */
+        @media (min-width: 1024px) {
+            .container {
+                width: 80%;
+                margin: auto;
+            }
+        }
+        /* Estilos para tablets */
+        @media (max-width: 1023px) and (min-width: 768px) {
+            .container {
+                width: 90%;
+                margin: auto;
+            }
+        }
+        /* Estilos para móviles */
+        @media (max-width: 767px) {
+            .container {
+                width: 100%;
+                margin: 0;
+                padding: 10px;
+            }
+            nav {
+                display: flex;
+                flex-direction: column;
+            }
+            .menu-item {
+                padding: 10px;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <h1 class="kim"><e href=index.html> <center>UNA GRAN AMIGA</center> </h1>
-  </header>
-  <main>
-    
-    <h3 class="text">AHORA UN POEMA</h3>
-    <h4 class="text"><p>En los días de sol y en las noches sin luna,
-        tu risa resuena, como dulce fortuna.
-        En el jardín de la vida, eres flor y fragancia,
-        un corazon valiente, llena de alegria.
-        
-        <p>Tus palabras son melodía,como un canto al amanecer,
-        Tu amistad es un lazo, un tesoro inquebrantable,
-        en este mundo incierto.</p>
-        
-        <p>Cuando el viento sopla y todo parece perderse,
-        ahí estás, firme, sin dejar dejarte caer.
-        Con tu sabiduría y tu corazón generoso,
-        haces de cada día un camino hermoso.</p>
-        
-        <p>Gracias, amiga, por ser mi consejera y guía,
-        por compartir risas y alegría.
-        En cada paso, en cada latido,
-        tu amistad es el regalo más querido.</p>
-  </main>
-  <nav class="d1">
-  <center> <a href="cosas.html">Siguiente
-  </nav>
-
-  <footer></P></h4>
-    <p class="text-center">&copy; Anpleth 2024. Todos los derechos reservados.</p>
-    
-    <p class="text-center">Creado por : Angel Apolo Chancazanan Llancari </p>
-    <p class="text-center">Supervisado por: Nadia Sarai Saldaña Miranda</p>
-    <p class="text-center">Dedicado a: Kimberly Mishel Medina Pinto</p>
-            
-    
-  </footer>
-<body>
-    
-</body>
-</html>
