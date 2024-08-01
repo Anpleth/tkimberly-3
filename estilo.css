@@ -4,6 +4,72 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(3px);
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* Estilos para tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* Estilos para móviles */
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-item {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+}
+Diseño Flexible: Utiliza unidades relativas como porcentajes, em o rem en lugar de unidades fijas como píxeles.
+
+css
+Copiar código
+.container {
+    width: 100%;
+    padding: 1rem;
+}
+
+.header {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+Imágenes Responsivas: Asegúrate de que las imágenes se ajusten al contenedor.
+
+css
+Copiar código
+img {
+    max-width: 100%;
+    height: auto;
+}
       
       
   
